@@ -9,12 +9,15 @@
     --special-dark:#245852;
 }
 
+@import url('fonts/Avenir-Light/inter.css');
+
 .page {
     background-color:var(--basic-extra-light);
     margin: 0 auto;
 }
 
 .page-body {
+    min-width: 1600px;
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -32,10 +35,12 @@
     display: flex;
     align-items: center;
     font-family: 'Lato';
+    max-width: 1370px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
+    margin: 0 auto;
 }
 
 .header__logo {
@@ -92,17 +97,30 @@
     border: 1px solid var(--special);
 }
 
+.header__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 /*==================== header end ====================*/
 
 /*==================== main start ====================*/
 /*==================== intro start ====================*/
-.intro__container {
+.intro {
     background-image: url('images/background.jpg');
     object-fit: cover;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 900px;
-    margin: 0;
+}
+
+.intro__container {
+    width: 1370px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 175px;
+    padding-bottom: 175px;
 }
 
 .intro__title {
@@ -112,7 +130,7 @@
     font-size: 65px;
     line-height: 74px;
     color: var(--special);
-
+    margin-top: 0px;
     max-width: 440px;
     margin-bottom: 30px;
 }
@@ -134,6 +152,7 @@
     width: 227px;
     height: 65px;
     border: 1px solid var(--special);
+    border-radius: 4px;
 
     font-family: 'Lato';
     font-style: normal;
@@ -141,13 +160,25 @@
     font-size: 20px;
     line-height: 25px;
 }
+
+.intro__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
 /*==================== intro end ====================*/
 
 
 /*==================== advantage start ====================*/
+.advantage {
+    margin: 0 auto;
+    max-width: 1370px;
+}
 .advantage__head-container {
     display: flex;
     justify-content: space-between;
+    margin: 0  auto;
+    padding-bottom: 52px;
+    padding-top: 170px ;
 }
 
 .advantage__title-box {
@@ -170,7 +201,7 @@
     order: -1;
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 24px;
     line-height: 38px;
 
@@ -187,4 +218,248 @@
 
     max-width: 671px;
     padding-top: 55px;
+}
+
+.advantage__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:95px;   
+    padding-top: 135px;
+}
+
+.advantage__list-item {
+    max-width: 390px;
+    margin-bottom: 51px;
+}
+
+.advantage__list-item-span {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+
+    color: var(--special);
+    opacity: 20%;
+    position: absolute;
+    margin-top: -135px;
+    margin-left: -10px;
+}
+
+.advantage__list-item-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    padding-bottom: 55px;
+
+    color: var(--basic-extra-dark);
+}
+
+.advantage__list-item-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-bottom: 60px;
+}
+
+.advantage__list-item-image {
+    max-width: 390px;
+    border-radius: 12px;
+}
+
+.advantage__list-item:nth-child(2) {
+    margin-top: 200px;
+}
+
+/*==================== advantage end ====================*/
+
+/*==================== lead start ====================*/
+.lead {
+    background-color: var(--special-dark);
+    min-height: 922px;
+}
+
+.lead__container {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+    margin: 0 auto;
+    max-width: 1370px;
+    width: 100%;
+    align-items: center;
+    padding-top: 229px;
+}
+
+.lead__text-box {
+    color: var(--basic-extra-light);
+}
+
+.lead__title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    margin-bottom: 33px;
+}
+
+.lead__text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 157%;
+
+    margin-bottom: 57px;
+}
+
+.lead__button {
+    background: var(--special);
+    border: 1px solid var(--special);
+    border-radius: 4px;
+
+    width: 240px;
+    height: 65px;
+
+    color: var(--basic-extra-light);
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.lead__video-preview {
+    background-image: url('images/Video.jpg');
+    width: 895px;
+    height: 516px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 16.6px;
+}
+
+/*==================== lead end ====================*/
+
+/*==================== product start ====================*/
+.product {
+    width: 1370px;
+    margin: 0 auto;
+}
+
+.product__container {
+    display: flex;
+    flex-direction: row;
+    gap: 86px;
+    padding-top: 120px;
+    margin-bottom: 242px;
+}
+
+.product__card {
+    position: absolute;
+    margin-top: -221px;
+    border-radius: 4px;
+}
+
+.product__content-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 584px;
+}
+
+.product__span {
+    order: -1;
+    color: var(--basic-extra-dark);
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 157%;
+    margin-bottom: 10px;
+}
+
+.product__title {
+    color: var(--special);
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    margin-bottom: 20px;
+}
+
+.product__text {
+    color: var(--basic-extra-dark);
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    
+    margin-bottom: 60px;
+}
+
+.product__button {
+    background-color: var(--special);
+    border: 1px solid var(--special);
+    border-radius: 4px;
+
+    color: var(--basic-extra-light);
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+
+    max-width: 227px;
+    min-height: 65px;
+}
+
+/*==================== product end ====================*/
+/*==================== main-block end ====================*/
+
+/*==================== footer start ====================*/
+.footer {
+    background-color: var(--special-dark);
+    min-height: 654px;
+}
+
+.footer__container {
+    width: 1370px;
+    margin: 0 auto;
+    padding-top: 95px;
+}
+
+.footer__logo {
+    margin-bottom: 60px;
+    width: 108px;
+    height: 55px;
+    color: var(--basic-extra-light)
+}
+
+.footer__nav {
+    list-style: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer__nav-link {
+    text-decoration: none;
+    color: var(--basic-extra-light)
+}
+
+.footer__nav-link:hover {
+    cursor: pointer;
+    opacity: 0.4;
 }
