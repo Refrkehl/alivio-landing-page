@@ -335,12 +335,18 @@
     line-height: 25px;
 }
 
+.lead__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .lead__video-preview {
     background-image: url('images/Video.jpg');
     width: 895px;
     height: 516px;
     object-fit: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 16.6px;
 }
 
@@ -362,8 +368,9 @@
 
 .product__card {
     position: absolute;
-    margin-top: -221px;
+    margin-top: -235px;
     border-radius: 4px;
+    margin-left: -65px;
 }
 
 .product__content-box {
@@ -418,6 +425,11 @@
 
     max-width: 227px;
     min-height: 65px;
+}
+
+.product__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 /*==================== product end ====================*/
